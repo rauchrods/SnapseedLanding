@@ -7,13 +7,16 @@
   height: 25rem;
   margin: 2rem;
   border-radius: 12px;
+  column-gap: 0.5rem;
 }
 
-.left_align img {
+.left_align img,
+.left_align .content {
   animation-name: left_desc_animation;
 }
 
-.right_align img {
+.right_align img,
+.right_align .content {
   animation-name: right_desc_animation;
 }
 
@@ -24,6 +27,7 @@
 }
 
 .img_container > img {
+  z-index: 2;
   height: 100%;
   max-height: 25rem;
   border-radius: 8px;
@@ -38,6 +42,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  animation-timing-function: linear;
+  animation-timeline: view();
 }
 
 @keyframes left_desc_animation {
