@@ -1,0 +1,65 @@
+.description_block {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 0 0;
+  border-bottom: 1px solid white;
+  padding: 0 1.5rem;
+  padding-bottom: 0;
+  background-color: #0f5835;
+  color: white;
+}
+
+.left_align img {
+  animation-name: left_desc_animation;
+}
+
+.right_align img {
+  animation-name: right_desc_animation;
+}
+
+.img_container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.img_container > img {
+  width: 75%;
+  max-height: 700px;
+  border-radius: 6px;
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+  animation-timing-function: linear;
+  animation-timeline: view();
+}
+
+.content {
+  font-size: 1.6rem;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+
+@keyframes left_desc_animation {
+  from {
+    transform: translate(-35%);
+  }
+  to {
+    transform: translate(20%);
+  }
+}
+
+@keyframes right_desc_animation {
+  from {
+    transform: translate(35%);
+  }
+  to {
+    transform: translate(-20%);
+  }
+}
+
+@media (width<500px) {
+  .content {
+    font-size: 1.1rem;
+  }
+}

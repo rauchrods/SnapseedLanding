@@ -1,0 +1,56 @@
+.header {
+  padding: 8rem 6% 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 1.5rem;
+  text-align: center;
+  color: #1d382f;
+}
+
+.header > .download_buttons {
+  display: flex;
+  column-gap: 2.5rem;
+}
+
+.btn_sec {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 0.8rem;
+}
+
+.android_rating,
+.ios_rating {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 0.5rem;
+  width: 90%;
+}
+
+.android_rating > .star_sec,
+.ios_rating > .star_sec {
+  color: gold;
+}
+
+.header_img {
+  width: 85%;
+  max-width: 600px;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+
+.header_img:hover {
+  transform:  scale(1.1) rotatez(9deg);
+}
+
+@media (width <500px) {
+  .header {
+    padding: 8rem 0 2rem;
+  }
+
+  .header_img {
+    width: 100%;
+  }
+}

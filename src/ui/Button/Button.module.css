@@ -1,0 +1,24 @@
+.snapseed_button {
+  padding: 0.5rem 0.8rem;
+  display: flex;
+  align-items: center;
+  column-gap: 0.6rem;
+  border-radius: 6px;
+  cursor: pointer;
+  color: #0f5835;
+  border: none;
+  font-weight: bold;
+  transition: transform 0.18s ease-in;
+  box-shadow: 7px 8px 9px -1px rgba(0,0,0,0.64);
+}
+
+.snapseed_button:hover{
+  background-color: #0a0f13;
+  color: white;
+  transform: scale(1.1);
+}
+
+.download_btn{
+    padding: 0.8rem 1.2rem;
+    font-size: 1.06rem;
+}
