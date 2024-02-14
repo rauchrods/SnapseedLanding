@@ -1,5 +1,5 @@
 .header {
-  padding: 8rem 6% 2rem;
+  padding: 8rem 6% 6rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -35,22 +35,23 @@
 }
 
 .header_img {
-  width: 85%;
+  width: 80%;
   max-width: 600px;
   cursor: pointer;
-  transition: all 0.5s ease-in-out;
+  z-index: 1;
+  animation-name: headerImgAnimation;
+  animation-timing-function: linear;
+  animation-timeline: view(10%);
 }
 
-.header_img:hover {
-  transform:  scale(1.1) rotatez(9deg);
+@keyframes headerImgAnimation {
+  to {
+    transform: scale(1.3) rotatez(15deg);
+  }
 }
 
 @media (width <500px) {
   .header {
     padding: 8rem 0 2rem;
-  }
-
-  .header_img {
-    width: 100%;
   }
 }
