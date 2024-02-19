@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./Testimonials.css";
+import  "./Testimonials.css";
 
 function Testimonials() {
   return (
