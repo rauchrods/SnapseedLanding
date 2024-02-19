@@ -1,0 +1,13 @@
+.testimonial_container {
+  margin: 4rem 15% 2rem;
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+  align-items: center;
+}
+
+@media (width<=650px) {
+  .testimonial_container {
+    margin: 4rem 6% 2rem;
+  }
+}
