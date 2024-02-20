@@ -8,6 +8,7 @@
   margin: 2rem 15%;
   border-radius: 12px;
   column-gap: 0.5rem;
+  max-width: 650px;
 }
 
 .left_align img,
