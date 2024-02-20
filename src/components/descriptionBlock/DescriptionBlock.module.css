@@ -5,13 +5,13 @@
   background-color: #0f5835;
   color: white;
   height: 25rem;
-  margin: 2rem 15%;
+  margin: 2rem 0;
   border-radius: 12px;
   column-gap: 0.5rem;
   max-width: 650px;
 }
 
-.left_align img,
+/* .left_align img,
 .left_align .content {
   animation-name: left_desc_animation;
 }
@@ -19,7 +19,7 @@
 .right_align img,
 .right_align .content {
   animation-name: right_desc_animation;
-}
+} */
 
 .img_container {
   display: flex;
